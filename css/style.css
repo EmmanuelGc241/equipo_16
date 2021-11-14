@@ -1,0 +1,450 @@
+/*************************Estilos Generales*******************************/
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@500&family=Poppins:wght@300;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+.max-w {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/****************************Header************************************/
+
+.hero {
+  height: 100vh;
+  background-image: linear-gradient(#236a99c9, #421de986),
+    url("../images/hero_img.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  height: 60px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  gap: 30px;
+}
+.nav__item {
+  list-style: none;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #eee;
+}
+.nav__link:hover {
+  text-shadow: 0px 0px 5px white;
+  color: white;
+}
+
+.logo {
+  background-color: dodgerblue;
+  padding: 5px 10px;
+}
+
+.hero__text {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: "jungle";
+  src: url("../images/jungle.ttf") format("truetype");
+}
+.hero__title {
+  font-family: "jungle";
+  letter-spacing: 20px;
+  font-size: 80px;
+  color: white;
+  text-shadow: 0px 0px 10px #585858;
+}
+
+.hero__sentence {
+  font-size: 30px;
+  color: white;
+  font-weight: lighter;
+}
+
+.btn {
+  background-color: #1e22ff9c;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 50px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.btn:hover {
+  background-color: #1e8fffc7;
+  transition: 0.2s;
+}
+
+/**************************** PAQUETES ************************************/
+.paquetes {
+  background-color: #d0e9f3;
+
+  height: auto;
+}
+
+.paquetes__h1 {
+  height: 10%;
+  text-align: center;
+  color: rgb(81, 81, 255);
+  font-size: 50px;
+  padding: 25px 0;
+}
+
+.paquetes__container {
+  height: 90%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.div__detalles {
+  background-color: whitesmoke;
+  width: 25%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.div__detalles img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.div__detalles:hover {
+  box-shadow: 0px 0px 20px #808080ad;
+  cursor: pointer;
+}
+.div__detalles-in,
+.div__detalles-fam,
+.div__detalles-par {
+  padding-left: 40%;
+}
+
+.div__detalles-in {
+  color: rgb(90, 182, 205);
+}
+.div__detalles-fam {
+  color: rgb(255, 140, 46);
+}
+.div__detalles-par {
+  color: rgb(252, 85, 85);
+}
+
+.div__detalles-h2 {
+  text-align: center;
+  font-size: 35px;
+  color: #2b2929;
+}
+
+.div__detalles-p {
+  padding: 10px 20px;
+  text-align: justify;
+}
+
+.div__info-in {
+  background-color: rgb(90, 182, 205);
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0 0 10px 10px;
+}
+.div__info-fam {
+  background-color: rgb(255, 140, 46);
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0 0 10px 10px;
+}
+.div__info-par {
+  background-color: rgb(252, 85, 85);
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 0 0 10px 10px;
+}
+
+.div__info-precio {
+  color: white;
+  font-size: 23px;
+  padding: 20px;
+}
+
+.div__info-btn {
+  margin: 20px 5px;
+  padding: 2px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.div__info-btn:hover {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+/**************************** Destinos Recomendados ************************************/
+.destinos {
+  height: auto;
+  align-content: center;
+  padding: 50px 0;
+  justify-content: space-around;
+  color: #10375f;
+  text-align: center;
+}
+
+.subtitle_destinos {
+  margin-top: -20px;
+  font-weight: 300px;
+  color: #a7a5a5;
+}
+.title_destinos {
+  height: 10%;
+  text-align: center;
+  color: rgb(31, 31, 46);
+  font-size: 50px;
+  padding: 25px 0;
+}
+.grid_destinos {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 15px;
+  gap: 23px;
+  justify-items: center;
+}
+.destino {
+  background-color: #d0e9f3;
+  display: flexbox;
+  width: 200px;
+  border-radius: 10%;
+  box-shadow: 0px 0px 10px #ccc;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.destino:hover {
+  box-shadow: 0px 0px 20px #808080ad;
+  cursor: pointer;
+}
+
+.destino:hover {
+  transform: scale(1.3, 1.3);
+  transition: 0.2s;
+}
+.destino img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  width: 200px;
+  height: 150px;
+  size: 200px;
+  border-radius: 10% 10% 0 0;
+}
+
+.destino h2,
+p {
+  padding: 5px 10px;
+}
+/**************************** Registro ************************************/
+.seccion-form {
+  display: grid;
+  grid-template-columns: 50% 30%;
+  padding: 100px 20px 100px;
+}
+.form-register {
+  width: 550px;
+  height: 550px;
+  background-color: rgba(73, 133, 192, 0.6);
+  padding: 50px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 7px 14px 37px #000;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.controls {
+  width: 100%;
+  background-color: #134472cc;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #1f53c5;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-register h3 {
+  padding-bottom: 30px;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px black;
+}
+.form-register .texto-terminos {
+  height: 40px;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.form-register a {
+  color: white;
+  text-decoration: none;
+}
+.form-register a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-register .boton {
+  width: 100%;
+  background-color: #1f53c5;
+  border: none;
+  margin-top: 30px;
+  padding: 15px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form-register .boton:hover {
+  width: 100%;
+  background-color: #8ca6df;
+  border: none;
+  margin-top: 30px;
+  padding: 18px;
+  color: rgb(117, 112, 112);
+  font-size: 16px;
+}
+.registro-text {
+  height: 300px;
+
+  padding-right: 100px;
+}
+.registro-text p {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  text-shadow: 2px 2px 5px #383838;
+}
+.registro-text h1 {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  text-shadow: 2px 2px 5px black;
+  font-size: 30px;
+}
+
+.controls::placeholder {
+  color: #b4aeaea8;
+}
+
+/*****************************Reseñas************************************/
+
+.reseñas__container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+.h1__reseñas {
+  text-align: center;
+  font-size: 50px;
+}
+
+.div__reseñas {
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px gray;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: white;
+}
+
+.div__reseñas:nth-of-type(1) {
+  background-color: #2b96c7;
+}
+
+.div__reseñas:nth-of-type(2) {
+  background-color: #2d39e2;
+}
+
+.div__reseñas:nth-of-type(3) {
+  background-color: #23ebaf;
+}
+.h2__reseña,
+.h4__reseña {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.div__reseñas img {
+  max-width: 30%;
+  justify-content: center;
+  border-radius: 100px;
+  box-shadow: 0px 0px 10px #0f0f0f86;
+}
+
+.div__reseñas p {
+  font-weight: 300;
+}
+/**************************** Footer ************************************/
+footer {
+  width: 100%;
+  padding: 10px;
+  background-color: #103253;
+  color: white;
+  text-align: center;
+}
+
+.footer__content p {
+  font-weight: 300;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+.redes__link {
+  text-decoration: none;
+  color: gray;
+}
+
+.redes__link:hover {
+  color: white;
+  transition: 0.2s;
+}
+
+.icon__logo {
+  font-size: 30px;
+}
